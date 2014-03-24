@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using ChessGame;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -11,13 +12,11 @@ namespace ChessGameTests
         public class GetMovesFrom
         {
             [TestMethod, Owner("Themba"), TestCategory("Proven"), TestCategory("Unit")]
-            public void Returns_2_3_When_Passed_2_2()
+            public void Returns_2_3_As_One_Reulst_When_Passed_2_2()
             {
                 var pawn = new Pawn();
-
-                Tuple<int, int> possibleMoves = pawn.GetMovesFrom(2, 2);
-                Assert.AreEqual(2, possibleMoves.Item1);
-                Assert.AreEqual(3, possibleMoves.Item2);
+                var possibleMoves = pawn.GetMovesFrom(2, 2);
+                Assert.IsTrue(possibleMoves.Any(x=>x.X == 2 && x.Y == 3));
             }
         }
     }

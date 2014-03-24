@@ -23,7 +23,7 @@ namespace ChessGameTests
             [TestMethod, Owner("Themba"), TestCategory("Proven"), TestCategory("Unit")]
             public void Retrieves_Piece_Added_To_Location()
             {
-                Target.AddPiece(Piece, 1, 1);
+                Target.AddPiece(Piece, new BoardCoordinate(1, 1));
                 Assert.AreEqual(Piece, Target.GetPiece(1,1));
             }
         }
@@ -34,7 +34,7 @@ namespace ChessGameTests
             [TestMethod, Owner("Themba"), TestCategory("Proven"), TestCategory("Unit")]
             public void Does_Not_Throw_Exception_When_Adding_A_Piece_To_An_Unoccupied_Square()
             {
-                Target.AddPiece(Piece, 2, 1);
+                Target.AddPiece(Piece, new BoardCoordinate(2, 1));
             }
         }
     }
