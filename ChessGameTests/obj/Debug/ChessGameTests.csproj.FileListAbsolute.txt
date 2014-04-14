@@ -5,10 +5,3 @@ C:\dev\Playground\ChessGame\ChessGameTests\bin\Debug\ChessGame.pdb
 C:\dev\Playground\ChessGame\ChessGameTests\obj\Debug\ChessGameTests.csprojResolveAssemblyReference.cache
 C:\dev\Playground\ChessGame\ChessGameTests\obj\Debug\ChessGameTests.dll
 C:\dev\Playground\ChessGame\ChessGameTests\obj\Debug\ChessGameTests.pdb
-C:\dev\git\chessgame\ChessGameTests\bin\Debug\ChessGameTests.dll
-C:\dev\git\chessgame\ChessGameTests\bin\Debug\ChessGameTests.pdb
-C:\dev\git\chessgame\ChessGameTests\bin\Debug\ChessGame.dll
-C:\dev\git\chessgame\ChessGameTests\bin\Debug\ChessGame.pdb
-C:\dev\git\chessgame\ChessGameTests\obj\Debug\ChessGameTests.csprojResolveAssemblyReference.cache
-C:\dev\git\chessgame\ChessGameTests\obj\Debug\ChessGameTests.dll
-C:\dev\git\chessgame\ChessGameTests\obj\Debug\ChessGameTests.pdb

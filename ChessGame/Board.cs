@@ -12,12 +12,15 @@ namespace ChessGame
         private readonly Pawn[,] _pieces = new Pawn[BoardSize, BoardSize];
         public void AddPiece(Pawn piece, BoardCoordinate moveTarget)
         {
+            if (!moveTarget.IsCoordinateValidForBorderSize(BoardSize))
+                throw new ArgumentException("moveTarget");
+            
             _pieces[moveTarget.X, moveTarget.Y] = piece;
         }
 
-        public Pawn GetPiece(int xCoordinate, int yCoordinate)
+        public Pawn GetPiece(BoardCoordinate squareInQuestion)
         {
-            return _pieces[xCoordinate, yCoordinate];
+            return _pieces[squareInQuestion.X,squareInQuestion.Y];
         }
     }
 }

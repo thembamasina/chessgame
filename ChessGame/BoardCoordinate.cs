@@ -20,5 +20,15 @@
         {
             get { return _y; }
         }
+
+        public bool IsCoordinateValidForBorderSize(int boardSize)
+        {
+            return IsDimensionValidForBoardSize(X, boardSize) && IsDimensionValidForBoardSize(Y, boardSize);
+        }
+
+        private static bool IsDimensionValidForBoardSize(int dimension, int boardSize)
+        {
+            return dimension > 0 && dimension <= boardSize;
+        }
     }
 }
